@@ -1,4 +1,5 @@
 const domin_suffix = [
+  "metacubex.one",
   "autoxjs.com",
   "android.com",
   "appspot.com",
