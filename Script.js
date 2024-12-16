@@ -60,7 +60,6 @@ const domin_suffix = [
 ]
 
 function main(config, profileName) {
-  return config;
   addLoadBalanceGroup(config);
   //replaceRules(config);
   return config;
@@ -110,6 +109,5 @@ const addLoadBalanceGroup = (config) => {
     }
   });
   config["proxy-groups"].push(lbgroups)
-
 }
 
