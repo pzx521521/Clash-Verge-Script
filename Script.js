@@ -61,7 +61,7 @@ const domin_suffix = [
 
 function main(config, profileName) {
   addLoadBalanceGroup(config);
-  //replaceRules(config);
+  // replaceRules(config);
   return config;
 }
 
@@ -88,7 +88,7 @@ const addLoadBalanceGroup = (config) => {
     }
     return acc;
   }, {}));
-
+  console.log(uniqueProxies)
   // 从 uniqueProxies 中提取所有 name
   const proxyNames = uniqueProxies.map(proxy => proxy.name);
   //strategy¶
